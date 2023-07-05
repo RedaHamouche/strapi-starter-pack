@@ -1,4 +1,6 @@
 module.exports = [
+  'strapi::errors',
+  'strapi::security',
   {
     name: 'strapi::cors',
     config: {
@@ -7,4 +9,8 @@ module.exports = [
       allowedHeaders: ['Content-Type', 'Authorization'],
     },
   },
+  'strapi::query',
+  'strapi::body',
+  'strapi::favicon',
+  'strapi::public',
 ];
